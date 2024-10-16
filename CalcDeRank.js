@@ -32,4 +32,3 @@ const vitorias = 87;
 const derrotas = 5;
 console.log(calcularRank(vitorias, derrotas));
 
-
