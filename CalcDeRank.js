@@ -1,4 +1,4 @@
-
+// Parâmetros da quantidade de vitórias
 function determinarNivel(vitorias) {
     if (vitorias < 10) {
         return "Ferro";
@@ -16,7 +16,20 @@ function determinarNivel(vitorias) {
         return "Imortal";
     }
 }
-
+// Calculando Saldo
 function calcularSaldo(vitorias, derrotas) {
     return vitorias - derrotas;
 }
+// Calculadora do Rank
+function calcularRank(vitorias, derrotas) {
+    const saldoVitorias = calcularSaldo(vitorias, derrotas);
+    const nivel = determinarNivel(vitorias);
+    return `O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`;
+}
+
+// Coloque aqui os números de vitórias e derrotas:
+const vitorias = 87;
+const derrotas = 5;
+console.log(calcularRank(vitorias, derrotas));
+
+
