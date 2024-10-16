@@ -17,3 +17,6 @@ function determinarNivel(vitorias) {
     }
 }
 
+function calcularSaldo(vitorias, derrotas) {
+    return vitorias - derrotas;
+}
